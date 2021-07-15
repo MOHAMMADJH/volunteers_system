@@ -1,0 +1,196 @@
+{
+ "creation": "2021-07-15 01:32:31.755965",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "volunteers_number",
+  "volunteers_name",
+  "gender",
+  "id_number",
+  "date_of_birth",
+  "identity_source",
+  "nationality",
+  "additional_notes",
+  "contact_information_section_section",
+  "bank_name",
+  "ibna_number",
+  "add_bank",
+  "phone_number",
+  "telephone",
+  "e_mail",
+  "address",
+  "add",
+  "attachments_section_section",
+  "document_name",
+  "document_type",
+  "document_path",
+  "document_upload",
+  "add_up",
+  "add_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "volunteers_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Volunteers Number",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "volunteers_name",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Volunteers Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identity_source",
+   "fieldtype": "Data",
+   "label": "Identity Source"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality",
+   "options": "Nationality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Long Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "contact_information_section_section",
+   "fieldtype": "Section Break",
+   "label": "Contact information section"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ibna_number",
+   "fieldtype": "Text",
+   "label": "IBAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_bank",
+   "fieldtype": "Button",
+   "label": "Add"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Data",
+   "label": "Telephone"
+  },
+  {
+   "fieldname": "e_mail",
+   "fieldtype": "Text",
+   "label": "E-mail"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "add",
+   "fieldtype": "Button",
+   "label": "Add"
+  },
+  {
+   "fieldname": "attachments_section_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments section"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Text",
+   "label": "Document name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "document type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_path",
+   "fieldtype": "Data",
+   "label": "Document Path",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_upload",
+   "fieldtype": "Attach",
+   "label": "Document Upload",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_up",
+   "fieldtype": "Data",
+   "label": "Add"
+  },
+  {
+   "fieldname": "add_2",
+   "fieldtype": "Button",
+   "label": "Add"
+  }
+ ],
+ "modified": "2021-07-15 01:32:31.755965",
+ "modified_by": "Administrator",
+ "module": "Volunteers System",
+ "name": "Volunteers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
