@@ -1,13 +1,15 @@
 {
+ "autoname": "naming_series:",
  "creation": "2021-07-15 01:32:31.755965",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "volunteers_number",
+  "naming_series",
   "volunteers_name",
   "gender",
   "id_number",
+  "section_break_3",
   "date_of_birth",
   "identity_source",
   "nationality",
@@ -15,29 +17,18 @@
   "contact_information_section_section",
   "bank_name",
   "ibna_number",
-  "add_bank",
   "phone_number",
   "telephone",
+  "column_break_9",
   "e_mail",
   "address",
-  "add",
   "attachments_section_section",
   "document_name",
   "document_type",
   "document_path",
-  "document_upload",
-  "add_up",
-  "add_2"
+  "document_upload"
  ],
  "fields": [
-  {
-   "fieldname": "volunteers_number",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Volunteers Number",
-   "reqd": 1,
-   "search_index": 1
-  },
   {
    "fieldname": "volunteers_name",
    "fieldtype": "Data",
@@ -84,14 +75,16 @@
    "label": "Additional Notes"
   },
   {
+   "collapsible": 1,
    "fieldname": "contact_information_section_section",
    "fieldtype": "Section Break",
    "label": "Contact information section"
   },
   {
    "fieldname": "bank_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Bank Name",
+   "options": "Bank",
    "reqd": 1
   },
   {
@@ -99,11 +92,6 @@
    "fieldtype": "Data",
    "label": "IBAN",
    "reqd": 1
-  },
-  {
-   "fieldname": "add_bank",
-   "fieldtype": "Button",
-   "label": "Add"
   },
   {
    "fieldname": "phone_number",
@@ -117,7 +105,7 @@
   },
   {
    "fieldname": "e_mail",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "E-mail"
   },
   {
@@ -126,11 +114,7 @@
    "label": "Address"
   },
   {
-   "fieldname": "add",
-   "fieldtype": "Button",
-   "label": "Add"
-  },
-  {
+   "collapsible": 1,
    "fieldname": "attachments_section_section",
    "fieldtype": "Section Break",
    "label": "Attachments section"
@@ -145,6 +129,7 @@
    "fieldname": "document_type",
    "fieldtype": "Select",
    "label": "document type",
+   "options": "document type 1\ndocument type 2\ndocument type 3\ndocument type 4",
    "reqd": 1
   },
   {
@@ -160,20 +145,28 @@
    "reqd": 1
   },
   {
-   "fieldname": "add_up",
-   "fieldtype": "Data",
-   "label": "Add"
+   "fieldname": "section_break_3",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "add_2",
-   "fieldtype": "Button",
-   "label": "Add"
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Volunteers Number",
+   "options": "V-",
+   "reqd": 1,
+   "search_index": 1
   }
  ],
- "modified": "2021-07-15 01:54:27.955601",
+ "modified": "2021-07-15 04:24:58.832111",
  "modified_by": "Administrator",
  "module": "Volunteers System",
  "name": "Volunteers",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {

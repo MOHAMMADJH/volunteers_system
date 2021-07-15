@@ -1,4 +1,5 @@
 {
+ "autoname": "field:nationality",
  "creation": "2021-07-15 01:37:49.709830",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,10 +13,11 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nationality",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   }
  ],
- "modified": "2021-07-15 01:45:58.303193",
+ "modified": "2021-07-15 03:40:07.238980",
  "modified_by": "Administrator",
  "module": "Volunteers System",
  "name": "Nationality",
