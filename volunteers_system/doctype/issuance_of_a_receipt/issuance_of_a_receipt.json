@@ -1,11 +1,14 @@
 {
  "autoname": "naming_series:",
- "creation": "2021-07-18 04:19:26.387280",
+ "creation": "2021-07-18 07:39:40.415079",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "receipt_type",
+  "donation_classification",
+  "project_name1",
+  "donation_amount_for_project",
   "naming_series",
   "date_of_receipt",
   "naming_series2",
@@ -23,7 +26,6 @@
   "account_associated_with_the_debit_party",
   "cost_center",
   "section_break_18",
-  "donation_classification",
   "project_name",
   "asset_name",
   "payment_terms_day",
@@ -58,10 +60,25 @@
    "reqd": 1
   },
   {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Receipt number",
+   "options": "V-",
+   "reqd": 1
+  },
+  {
    "fieldname": "date_of_receipt",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date of receipt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series2",
+   "fieldtype": "Select",
+   "label": "Registration number",
+   "options": "RN-",
    "reqd": 1
   },
   {
@@ -79,10 +96,18 @@
    "reqd": 1
   },
   {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "statement",
    "fieldtype": "Long Text",
    "label": "Statement",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "exchange_classification",
@@ -110,6 +135,10 @@
    "label": "Partner record preview"
   },
   {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "account_associated_with_partner",
    "fieldtype": "Select",
    "label": "Account associated with partner",
@@ -126,6 +155,16 @@
    "fieldtype": "Link",
    "label": "Cost center",
    "options": "Cost Center"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "donation_classification",
+   "fieldtype": "Select",
+   "label": "Donation classification",
+   "options": "\u062a\u0628\u0631\u0639 \u0644\u0645\u0634\u0631\u0648\u0639\n\u062a\u0628\u0631\u0639 \u0644\u0645\u0633\u062a\u0641\u064a\u062f\n\u062a\u0628\u0631\u0639 \u0644\u062a\u0627\u0628\u0639\n\u0627\u0634\u062a\u0631\u0627\u0643 \u062c\u0645\u0639\u064a\u0629\n\u0639\u0636\u0648\u064a\u0629"
   },
   {
    "fieldname": "project_name",
@@ -149,9 +188,17 @@
    "label": "Payment Terms - Date"
   },
   {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "additional_notes",
    "fieldtype": "Long Text",
    "label": "Additional Notes"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
   },
   {
    "default": "\u0641\u0639\u0627\u0644",
@@ -234,66 +281,32 @@
    "options": "Tax Rule"
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Long Text",
-   "label": "Description"
-  },
-  {
    "fieldname": "total",
    "fieldtype": "Float",
    "label": "Total"
   },
   {
-   "fieldname": "column_break_7",
-   "fieldtype": "Column Break"
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
   },
   {
-   "fieldname": "column_break_9",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_14",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_18",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_23",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_25",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Receipt number",
-   "options": "V-",
+   "fieldname": "project_name1",
+   "fieldtype": "Link",
+   "label": "Project name",
+   "options": "Project",
    "reqd": 1
   },
   {
-   "fieldname": "naming_series2",
-   "fieldtype": "Select",
-   "label": "Registration number",
-   "options": "RN-",
-   "reqd": 1
-  },
-  {
-   "fieldname": "donation_classification",
-   "fieldtype": "Select",
-   "hidden": 1,
-   "label": "Donation classification",
-   "options": "\u062a\u0628\u0631\u0639 \u0644\u0645\u0634\u0631\u0648\u0639\n\u062a\u0628\u0631\u0639 \u0644\u0645\u0633\u062a\u0641\u064a\u062f\n\u062a\u0628\u0631\u0639 \u0644\u062a\u0627\u0628\u0639\n\u0627\u0634\u062a\u0631\u0627\u0643 \u062c\u0645\u0639\u064a\u0629\n\u0639\u0636\u0648\u064a\u0629"
+   "fieldname": "donation_amount_for_project",
+   "fieldtype": "Data",
+   "label": "Donation amount for the project"
   }
  ],
- "modified": "2021-07-18 07:38:19.182338",
+ "modified": "2021-07-18 07:56:00.283296",
  "modified_by": "Administrator",
  "module": "Volunteers System",
- "name": "Issuance Of a Voucher",
+ "name": "Issuance of a Receipt",
  "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
