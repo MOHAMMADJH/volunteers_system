@@ -1,0 +1,198 @@
+{
+ "creation": "2021-07-18 04:19:26.387280",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "receipt_type",
+  "receipt_number",
+  "date_of_receipt",
+  "registration_number",
+  "currency",
+  "amount_saudiriyals",
+  "statement",
+  "exchange_classification",
+  "partner_type",
+  "partner_name",
+  "partner_recordpreview",
+  "account_associated_with_partner",
+  "account_associated_with_the_debit_party",
+  "cost_center",
+  "project_name",
+  "asset_name",
+  "payment_terms_day",
+  "dayment_terms_date",
+  "additional_notes",
+  "status",
+  "created_by",
+  "date_created",
+  "branch"
+ ],
+ "fields": [
+  {
+   "fieldname": "receipt_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Receipt type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "receipt_number",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Receipt number",
+   "options": "V-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_receipt",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of receipt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Registration number",
+   "options": "RN-",
+   "reqd": 1
+  },
+  {
+   "default": "SAR\n",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_saudiriyals",
+   "fieldtype": "Float",
+   "label": "Amount in Saudi Riyals",
+   "reqd": 1
+  },
+  {
+   "fieldname": "statement",
+   "fieldtype": "Long Text",
+   "label": "Statement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exchange_classification",
+   "fieldtype": "Select",
+   "label": "Exchange classification",
+   "options": "\u0635\u0631\u0641 \u0639\u0627\u0645\n\u0635\u0631\u0641 \u0644\u0645\u0648\u0638\u0641\n\u0635\u0631\u0641 \u0644\u0645\u0633\u062a\u0641\u064a\u062f\n\u0635\u0631\u0641 \u0644\u062a\u0627\u0628\u0639\n\u0635\u0631\u0641 \u0644\u0627\u0635\u0644\n\u0635\u0631\u0641 \u0644\u0645\u0634\u0631\u0648\u0639",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner_type",
+   "fieldtype": "Select",
+   "label": "Partner type",
+   "options": "\u0639\u0645\u064a\u0644\n\u0645\u0648\u0631\u062f\n\u0645\u0648\u0638\u0641\n\u062d\u0633\u0627\u0628\n\u062f\u0627\u0639\u0645\n\u0645\u0633\u062a\u0641\u064a\u062f\n\u0639\u0636\u0648\n\u0645\u0642\u0627\u0648\u0644\n\u0623\u0635\u0644",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Select",
+   "label": "Partner name",
+   "options": "123"
+  },
+  {
+   "fieldname": "partner_recordpreview",
+   "fieldtype": "Button",
+   "label": "Partner record preview"
+  },
+  {
+   "fieldname": "account_associated_with_partner",
+   "fieldtype": "Select",
+   "label": "Account associated with partner",
+   "options": "123"
+  },
+  {
+   "fieldname": "account_associated_with_the_debit_party",
+   "fieldtype": "Select",
+   "label": "Account associated with the debit party",
+   "options": "123"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project name",
+   "options": "Project"
+  },
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "label": "Asset name"
+  },
+  {
+   "fieldname": "payment_terms_day",
+   "fieldtype": "Int",
+   "label": "Payment terms - day"
+  },
+  {
+   "fieldname": "dayment_terms_date",
+   "fieldtype": "Date",
+   "label": "Payment Terms - Date"
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Long Text",
+   "label": "Additional Notes"
+  },
+  {
+   "default": "\u0641\u0639\u0627\u0644",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\u0641\u0639\u0627\u0644\n\u063a\u064a\u0631 \u0641\u0639\u0627\u0644"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created by"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Date",
+   "label": "Date created"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "reqd": 1
+  }
+ ],
+ "modified": "2021-07-18 04:22:44.701552",
+ "modified_by": "Administrator",
+ "module": "Volunteers System",
+ "name": "Issuance Of a Voucher",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
