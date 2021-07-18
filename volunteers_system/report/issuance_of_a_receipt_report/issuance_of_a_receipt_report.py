@@ -24,16 +24,17 @@ def get_columns():
 		_("Partner name") + ":Select:120",
 		_("Created by") + ":Data:120", 
 		_("Status") + ":Select:60", 
+		_("Donation classification") + ":Select:120",
 		_("Project name") + ":Link/Project:100",
-		_("Asset name") + ":Data:100"
+		_("Affiliate name") + ":Data:100"
 	]
-
+	
 def get_data(filters):
 	conditions = get_conditions(filters)
 	return frappe.db.sql("""select naming_series, date_of_receipt, statement,
 	amount_saudiriyals, partner_name, created_by,
-	status, project_name ,asset_name 
-	from `tabIssuance Of a Voucher` where  status = 'فعال' %s""" % conditions, as_list=1)
+	status, donation_classification ,project_name1 ,affiliate_name 
+	from `tabIssuance of a Receipt` where  status = 'فعال' %s""" % conditions, as_list=1)
 
 def get_conditions(filters):
 	conditions = ""
@@ -57,12 +58,14 @@ def get_conditions(filters):
 
 	if filters.get("status"): conditions += " and status = '%s'" % \
 		filters["status"].replace("'", "\\'")
+	if filters.get("donation_classification"): conditions += " and donation_classification = '%s'" % \
+		filters["donation_classification"].replace("'", "\\'")
 
-	if filters.get("project_name"): conditions += " and project_name = '%s'" % \
-		filters["project_name"].replace("'", "\\'")
+	if filters.get("project_name1"): conditions += " and project_name1 = '%s'" % \
+		filters["project_name1"].replace("'", "\\'")
 
-	if filters.get("asset_name"): conditions += " and asset_name = '%s'" % \
-		filters["asset_name"].replace("'", "\\'")
+	if filters.get("affiliate_name"): conditions += " and affiliate_name = '%s'" % \
+		filters["affiliate_name"].replace("'", "\\'")
 
 	
 

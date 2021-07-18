@@ -2,7 +2,7 @@
 // For license information, please see license.txt
 /* eslint-disable */
 
-frappe.query_reports["Issuance Of a Voucher Report"] = {
+frappe.query_reports["Issuance of a Receipt Report"] = {
 	"filters": [{
 		"fieldname":"naming_series",
 		"label": __("Receipt number"),
@@ -53,6 +53,13 @@ frappe.query_reports["Issuance Of a Voucher Report"] = {
 		"default":""
 	},
 	{
+		"fieldname":"donation_classification",
+		"label": __("Donation classification"),
+		"fieldtype": "Select",
+		"options": "",
+		"default":""
+	},
+	{
 		"fieldname":"project_name1",
 		"label": __("Project name"),
 		"fieldtype": "Date",
@@ -60,11 +67,12 @@ frappe.query_reports["Issuance Of a Voucher Report"] = {
 		"default":""
 	},
 	{
-		"fieldname":"asset_name",
-		"label": __("Asset name"),
+		"fieldname":"affiliate_name",
+		"label": __("Affiliate name"),
 		"fieldtype": "Data",
 		"options": "",
 		"default":""
 	}
 	]
 };
+

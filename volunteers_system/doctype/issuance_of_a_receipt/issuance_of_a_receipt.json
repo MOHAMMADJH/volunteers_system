@@ -8,6 +8,7 @@
   "receipt_type",
   "donation_classification",
   "project_name1",
+  "affiliate_name",
   "donation_amount_for_project",
   "naming_series",
   "date_of_receipt",
@@ -57,14 +58,6 @@
    "in_list_view": 1,
    "label": "Receipt type",
    "options": "\u0627\u064a\u0635\u0627\u0644 \u062a\u0628\u0631\u0639\n\u0627\u064a\u0635\u0627\u0644 \u0645\u0628\u064a\u0639\u0627\u062a",
-   "reqd": 1
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Receipt number",
-   "options": "V-",
    "reqd": 1
   },
   {
@@ -301,9 +294,23 @@
    "fieldname": "donation_amount_for_project",
    "fieldtype": "Data",
    "label": "Donation amount for the project"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Receipt number",
+   "options": "V-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "affiliate_name",
+   "fieldtype": "Data",
+   "label": "Affiliate name",
+   "reqd": 1
   }
  ],
- "modified": "2021-07-18 07:56:00.283296",
+ "modified": "2021-07-18 09:39:05.740717",
  "modified_by": "Administrator",
  "module": "Volunteers System",
  "name": "Issuance of a Receipt",

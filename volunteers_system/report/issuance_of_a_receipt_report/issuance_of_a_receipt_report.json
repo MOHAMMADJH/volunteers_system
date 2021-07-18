@@ -1,0 +1,20 @@
+{
+ "add_total_row": 0,
+ "creation": "2021-07-18 10:52:07.244674",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2021-07-18 10:52:07.244674",
+ "modified_by": "Administrator",
+ "module": "Volunteers System",
+ "name": "Issuance of a Receipt Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Issuance of a Receipt",
+ "report_name": "Issuance of a Receipt Report",
+ "report_type": "Script Report",
+ "roles": []
+}
